@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Fonts Concepts in CSS</title>
+<link href='CSS/style.css' type='text/css' rel='stylesheet'/>
+<script src='JS/ext.js' type='text/javascript' language='javascript'></script>
+</head>
+<body>
+<div id='header'>Image Gallery Slide Show</div>
+<div id='thumb'>
+<img src='IMG/1.jpg' onclick="doShuffle('big',this.src);"/>
+<img src='IMG/2.jpg' ondblclick="doShuffle('big',this.src);"/>
+<img src='IMG/3.jpg' onmouseover="doShuffle('big',this.src);"/>
+<img src='IMG/4.jpg' onmouseout="doShuffle('big',this.src);"/>
+</div>
+<div id='button'>
+<input type='button' name='zoom' value='Zoom In' onclick="doZoom('big','+');"/>
+<input type='button' name='zoom' value='Normal' onclick="doZoom('big','0');"/>
+<input type='button' name='zoom' value='Zoom Out' onclick="doZoom('big','-');"/>
+</div>
+<div id='main'>
+<img src='IMG/2.jpg' id='big'/>
+</div>
+</body>
+</html>
